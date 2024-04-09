@@ -9,13 +9,28 @@ h1{
     margin-bottom: 42px;
 
 }
-input{
-    display: block;
+.divInput{
+    display: flex;
     width: 100%;
     border-radius: 5px;
     border: 1px solid #C4C4C4;
     margin-bottom: 12px;
     height: 40px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+}
+input{
+    width: 80%;
+    height: auto;
+    outline: none;
+    border-style: none;
+}
+.buttonImg{
+    width: 20px;
+    height: 20px;
+    justify-self:center;
+    align-self: center;
 }
 form{
     margin: auto;

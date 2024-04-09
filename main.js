@@ -8,7 +8,7 @@ const img1 = document.querySelector('.imgSort1')
 const dimg2 = document.querySelector('.dimgSort2')
 const img2 = document.querySelector('.imgSort2')
 
-
+const buttonImg = document.querySelector('.buttonImg')
 
 
 const btnPlus = document.querySelector('.buttonplus')
@@ -32,6 +32,10 @@ input.addEventListener('keyup',(e)=>{
     else{
         addBtn.classList.remove()
     }
+})
+buttonImg.addEventListener('click',(e)=>{
+    e.preventDefault()
+    input.value = ''
 })
 addBtn.addEventListener('click',(e)=>{
     e.preventDefault()
@@ -81,7 +85,6 @@ btnPlus.addEventListener('click',(e)=>{
         listContainer.classList.toggle('listContainer')
 
     }
-     input.style.display = 'none'
 })
 
 listUl.addEventListener('click',(e)=>{
@@ -103,7 +106,7 @@ sortBtn.addEventListener('click',(e)=>{
     }
     e.preventDefault()
     const list = Array.from(listUl.getElementsByTagName('li'))
-    console.log(list)
+    // console.log(list)
     list.sort((a,b)=>{
        let textA = a.textContent.trim().toLocaleLowerCase()
        let textB = b.textContent.trim().toLocaleLowerCase()
