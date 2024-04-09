@@ -1,0 +1,173 @@
+main{
+    width: 336px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    margin: auto;
+}
+h1{
+    margin: 0px;
+    margin-bottom: 42px;
+
+}
+input{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #C4C4C4;
+    margin-bottom: 12px;
+    height: 40px;
+}
+form{
+    margin: auto;
+    border-top: 28px solid #FFDC40;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.formdiv{
+    width: 286px;
+    padding: 13px 0px 19px 0px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.sortDiv{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    margin-bottom: 8px;
+    gap: 0px 5px;
+}
+.sortbutton1{
+    position: relative;
+    border-style: none;
+    width: 25px;
+    height: 15px;
+    padding: 0;
+}
+.dimgSort1{
+ display: block;
+}
+.imgSort1{
+    display: none;
+    
+}
+.sortbutton2{
+    display: none;
+    position: relative;
+    border-style: none;
+    width: 25px;
+    padding: 0;
+    height: 15px;
+}
+.dimgSort2{
+    left: 0;
+    top: 0;
+    display: none;
+    position: absolute;
+}
+.imgSort2{
+    left: 0;
+    top: 0;
+    display: none;
+    position: absolute;
+}
+
+
+.divbuttonAdd{
+    display: flex;
+    width: 150px;
+    height: 42px;
+    border-radius: 71px;
+    background-color: #833AE0;
+    border: 1px solid #C4C4C4;
+    font-size: 14px;
+}
+
+.addbutton{
+    width: 66%;
+    background-color: #833AE0;
+    color: white;
+    border: none;
+    border-radius: 71px;
+    opacity: 0.5;
+    /* cursor: none; */
+}
+.buttonplus{
+    width: 33%;
+    width: 42px;
+    background-color: #8f58d6;
+    height: 42px;
+    border-radius: 71px;
+    color: white;
+    border: none;
+}
+
+
+
+
+.listContainer{
+    position: relative;
+    display: none;
+    border: 1px solid #C4C4C4;
+    width: 100%;
+}
+
+.divListUl{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 229px;
+    margin: 10px 30px 10px 29px;
+    
+}
+.divListMedium{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+.divListMedium p{
+    margin: 0px;
+}
+.divRemove{
+    width: 20px;
+    height: 20px;
+    position: relative;
+
+}
+.imgDeactive{
+    display: block;
+    
+}
+.imgHover{
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+.divRemove:hover .imgHover{
+    display: block;
+}
+
+.btnactive{
+    opacity: 1;
+    cursor: pointer;
+}
+.divListActive{
+    display: block;
+    border: 1px solid #C4C4C4;
+
+}
+
+
+
+.boxShadow{
+    box-shadow: 8px 8px 32px #e1e1e1;
+  }
+  .drag{
+    opacity: 0;
+  }

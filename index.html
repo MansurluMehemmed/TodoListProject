@@ -7,10 +7,43 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <p>salam </p>
-    </div>
+    <main>
+
+        <form action="">
+            
+            <div class="formdiv">
+                <h1>To-Do-List</h1>
+                
+                <div class="sortDiv">
+                    <button class="sortbutton1" type="submit">
+                        <img class="dimgSort1" src="./img/Group 38sort.png" alt="sort">
+                        <img class="imgSort1" src="./img/Group 73sortactive.png" alt="sort">
+    
+                    </button>
+                    <button class="sortbutton2" type="submit">
+                        <img class="dimgSort2" src="./img/Group 90sortdown.png" alt="sort">
+                        <img class="imgSort2" src="./img/Group 91sortdownactive.png" alt="sort">
+                    </button>
+                </div>
+                <input type="text" name="listname" id="listname" >
+                <div class="listContainer">
+                <ul id="ul" class="divListUl">
+                </ul>
+                </div>
+
+                <div class="divbuttonAdd">
+                    <button class="buttonplus" type="submit">
+                        +
+                        </button>
+                    <button type="submit" class="addbutton">
+                        
+                        Əlavə et</button>
+                </div>
+            </div>
+        </form>
+    </main>
 
     <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
 </body>
 </html>
